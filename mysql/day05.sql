@@ -1,0 +1,11 @@
+-- select prod_id, prod_name, prod_price from products where vend_id = 'DLL01' and prod_price <= 4;
+-- select prod_id, prod_price, prod_name from products where vend_id = 'DLL01' or vend_id = 'BRS01';
+-- select prod_name, prod_price from products where (vend_id = 'DLL01' or vend_id = 'BRS01') and prod_price >= 10;
+-- select prod_name, prod_price from products where vend_id in ('DLL01', 'BRS01') order by prod_name;
+-- select prod_name, prod_price from products where vend_id = 'DLL01' or vend_id = 'BRS01' order by prod_name;
+-- select prod_name from products where not vend_id = 'DLL01' order by prod_name;
+-- select prod_name from products where vend_id <> 'DLL01' order by prod_name;
+-- select vend_name from vendors where vend_state = 'CA' AND vend_country = 'USA';
+-- select order_num, prod_id, quantity from orderitems where prod_id in ('BR01', 'BR02', 'BR03') and quantity >= 100;
+-- select prod_name, prod_price from products where prod_price >= 3 and prod_price <= 6;
+-- select prod_name, prod_price from products where prod_price between 3 and 6;
