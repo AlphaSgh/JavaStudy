@@ -1,9 +1,23 @@
 public class Main {
     public static void main(String[] args) {
+        String s = "Test string";
+        int n1 = s.indexOf('t');
+        int n2 = s.indexOf("st");
+        int n3 = s.indexOf("st", 4);
+        System.out.println(n1);
+        System.out.println(n2);
+        System.out.println(n3);
+
+/*
+        Hello hello = new Hello();
+        hello.Hello();
+        hello.Hello("sgh");
+        hello.Hello("sgh", 19);
+*/
         Persion ming = new Persion();
-        ming.setAge(11);
-        ming.setName("ming");
-        System.out.println("ming age==" + ming.getAge());
+//        ming.setAge(11);
+        ming.setName("ming", "hong");
+//        System.out.println("ming age==" + ming.getAge());
         System.out.println("ming name==" + ming.getName());
 /*
         City bj = new City();

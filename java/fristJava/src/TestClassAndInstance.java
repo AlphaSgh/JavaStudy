@@ -10,6 +10,17 @@ class Persion {
     private int age;
     private String name;
 
+    public Persion(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+    public Persion(String name) {
+        this(name, 18);
+    }
+    public Persion() {
+        this("sgh");
+    }
+
     public int getAge() {
         return age;
     }
@@ -30,5 +41,24 @@ class Persion {
             throw new IllegalArgumentException("invalid name");
         }
         this.name = name;
+    }
+    public void setName(String name1, String name2) {
+        this.name = name1 + " & " + name2;
+    }
+}
+
+class Hello {
+    public void Hello() {
+        System.out.println("hello!!!");
+    }
+    public void Hello(String name) {
+        System.out.println("hello " + name);
+    }
+    public void Hello(String name, int age) {
+        if (age > 18) {
+            System.out.println("hello " + name + age);
+        } else {
+            System.out.println("hi " + name + age);
+        }
     }
 }
