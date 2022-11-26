@@ -1,5 +1,25 @@
 public class Main {
     public static void main(String[] args) {
+        Hero hero1 = new Hero("hero1", 1);
+        Hero hero2 = new Hero("hero2", 2);
+        Hero hero3 = new Hero("hero3", 3);
+        Hero.setNumber(99);
+        System.out.println(hero1.age);
+        System.out.println(hero1.name);
+        System.out.println(hero2.age);
+        System.out.println(hero2.name);
+        System.out.println(Hero.number);
+        System.out.println(Hero.count);
+/*
+        IncomeInterface[] incomes = new IncomeInterface[] {
+                new salaryInter(3000),
+                new otherIncomeInter(5000),
+                new noTax(1000)
+        };
+        double total = totalTax(incomes);
+        System.out.println(total);
+*/
+/*
         Income[] incomes = new Income[] {
                 new Income(3000),
                 new Salary(5000),
@@ -14,6 +34,7 @@ public class Main {
         double total1 = totalTax(income1s);
         System.out.println(total);
         System.out.println(total1);
+*/
 /*
         Persion p = new Persion();
         Student s = new Student();
@@ -141,6 +162,13 @@ public class Main {
     public static double totalTax(Income1[] incomes1) {
         double total = 0;
         for (Income1 income1: incomes1) {
+            total += income1.getTax();
+        }
+        return total;
+    }
+    public static double totalTax(IncomeInterface[] incomes1) {
+        double total = 0;
+        for (IncomeInterface income1: incomes1) {
             total += income1.getTax();
         }
         return total;
