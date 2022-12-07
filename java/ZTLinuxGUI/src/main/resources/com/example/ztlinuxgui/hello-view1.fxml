@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <SplitPane fx:id="splitPane" dividerPositions="0.2391" orientation="VERTICAL" prefHeight="671.0" prefWidth="969.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <Text layoutX="298.0" layoutY="81.0" strokeType="OUTSIDE" strokeWidth="0.0" text="用户策略管理">
+                     <font>
+                        <Font size="48.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <SplitPane dividerPositions="0.1848" prefHeight="452.8" prefWidth="898.4" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <items>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                           <children>
+                              <TabPane layoutX="-7.0" prefHeight="501.0" prefWidth="250.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                <tabs>
+                                  <Tab fx:id="tab_user" text="用户">
+                                    <content>
+                                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                             <children>
+                                                <VBox alignment="CENTER" prefHeight="518.0" prefWidth="297.0" spacing="27.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="-15.0" AnchorPane.topAnchor="0.0">
+                                                   <children>
+                                                      <Button mnemonicParsing="false" onAction="#addUser" prefHeight="40.0" prefWidth="115.0" text="添加用户" />
+                                                      <Button mnemonicParsing="false" onAction="#changeUser" prefHeight="40.0" prefWidth="115.0" text="修改信息" />
+                                                      <Button mnemonicParsing="false" onAction="#deleteUser" prefHeight="40.0" prefWidth="115.0" text="删除用户" />
+                                                      <Button mnemonicParsing="false" onAction="#queryUser" prefHeight="40.0" prefWidth="115.0" text="查询信息" />
+                                                   </children>
+                                                </VBox>
+                                             </children>
+                                          </AnchorPane>
+                                    </content>
+                                  </Tab>
+                                  <Tab fx:id="tab_proxy" text="策略">
+                                    <content>
+                                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                             <children>
+                                                <VBox alignment="CENTER" prefHeight="462.0" prefWidth="250.0" spacing="27.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                                   <children>
+                                                      <Button mnemonicParsing="false" onAction="#addProxy" prefHeight="40.0" prefWidth="115.0" text="添加策略" />
+                                                      <Button mnemonicParsing="false" onAction="#changeProxy" prefHeight="40.0" prefWidth="115.0" text="修改策略" />
+                                                      <Button mnemonicParsing="false" onAction="#deleteProxy" prefHeight="40.0" prefWidth="115.0" text="删除策略" />
+                                                      <Button mnemonicParsing="false" onAction="#queryProxy" prefHeight="40.0" prefWidth="115.0" text="查询策略" />
+                                                   </children>
+                                                </VBox>
+                                             </children>
+                                          </AnchorPane>
+                                    </content>
+                                  </Tab>
+                                </tabs>
+                              </TabPane>
+                           </children>
+                        </AnchorPane>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                           <children>
+                              <StackPane prefHeight="556.0" prefWidth="886.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <children>
+                                    <TableView fx:id="userTableView" prefHeight="200.0" prefWidth="200.0">
+                                      <columns>
+                                        <TableColumn prefWidth="143.20002138614655" text="userName" />
+                                        <TableColumn prefWidth="184.79998779296875" text="Department" />
+                                          <TableColumn prefWidth="196.79998779296875" text="Project" />
+                                          <TableColumn prefWidth="204.0" text="Level" />
+                                      </columns>
+                                    </TableView>
+                                    <TableView fx:id="proxyTableView" prefHeight="378.0" prefWidth="728.0">
+                                      <columns>
+                                        <TableColumn fx:id="department_src" prefWidth="183.20002138614655" text="department_src" />
+                                        <TableColumn fx:id="project_src" prefWidth="209.60000610351562" text="project_src" />
+                                          <TableColumn fx:id="department_dest" prefWidth="171.20004272460938" text="department_dest" />
+                                          <TableColumn fx:id="project_src" prefWidth="164.79998779296875" text="project_dest" />
+                                      </columns>
+                                    </TableView>
+                                 </children>
+                              </StackPane>
+                           </children>
+                        </AnchorPane>
+                    </items>
+                  </SplitPane>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>
