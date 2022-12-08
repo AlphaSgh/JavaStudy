@@ -1,7 +1,6 @@
 import java.sql.Struct;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.time.DayOfWeek;
+import java.util.*;
 
 public class testMap {
     public static void test01() {
@@ -52,6 +51,39 @@ public class testMap {
         System.out.println(holder.getScore("Alice") == 85 ? "测试成功!" : "测试失败!");
         System.out.println(holder.getScore("Tom") == -1 ? "测试成功!" : "测试失败!");
     }
+    public static void test03() {
+        Map<String, Person> map = new HashMap<>();
+        map.put("a", new Person("xiao", "ming", 12));
+        map.put("b", new Person("xiao", "hong", 19));
+        map.put("c", new Person("xiao", "bai", 20));
+        map.get("a");//xiaoming
+        map.get("X");//null
+        //因此，正确使用Map必须保证：
+        //
+        //作为key的对象必须正确覆写equals()方法，相等的两个key实例调用equals()必须返回true；
+        //
+        //作为key的对象还必须正确覆写hashCode()方法，且hashCode()方法要严格遵循以下规范：
+        //如果两个对象相等，则两个对象的hashCode()必须相等；
+        //如果两个对象不相等，则两个对象的hashCode()尽量不要相等。
+        //编写equals()和hashCode()遵循的原则是：
+        //
+        //equals()用到的用于比较的每一个字段，都必须在hashCode()中用于计算；equals()中没有使用到的字段，绝不可放在hashCode()中计算。
+        //
+        //另外注意，对于放入HashMap的value对象，没有任何要求。
+
+    }
+    public static void testEnumMap() {
+        Map<DayOfWeek, String> map = new EnumMap<DayOfWeek, String>(DayOfWeek.class);
+        map.put(DayOfWeek.MONDAY, "星期一");
+        map.put(DayOfWeek.TUESDAY, "星期二");
+        map.put(DayOfWeek.WEDNESDAY, "星期三");
+        map.put(DayOfWeek.THURSDAY, "星期四");
+        map.put(DayOfWeek.FRIDAY, "星期五");
+        map.put(DayOfWeek.SATURDAY, "星期六");
+        map.put(DayOfWeek.SUNDAY, "星期日");
+        System.out.println(map);
+        System.out.println(map.get(DayOfWeek.MONDAY));
+    }
 }
 class Students {
     List<Student> list;
@@ -68,6 +100,10 @@ class Students {
         Integer score = this.cache.get(name);
         if (score == null) {
             // TODO:
+            score = findInList(name);
+        }
+        if (score != null) {
+            this.cache.put(name, score);
         }
         return score == null ? -1 : score.intValue();
     }

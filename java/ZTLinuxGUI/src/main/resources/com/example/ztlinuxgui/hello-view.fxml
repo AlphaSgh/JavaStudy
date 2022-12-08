@@ -12,7 +12,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <SplitPane fx:id="splitPane" dividerPositions="0.2391" orientation="VERTICAL" prefHeight="671.0" prefWidth="969.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
         <items>
@@ -81,10 +81,10 @@
                                     </TableView>
                                     <TableView fx:id="policyTableView" editable="true" prefHeight="200.0" prefWidth="200.0">
                                       <columns>
-                                        <TableColumn fx:id="departmentSrcCol" prefWidth="180.0" text="DepartmentSrc" />
-                                        <TableColumn fx:id="projectSrcCol" prefWidth="180.0" text="ProjectSrc" />
-                                          <TableColumn fx:id="departmentDestCol" prefWidth="180.0" text="DepartmentDest" />
-                                          <TableColumn fx:id="projectDestCol" prefWidth="180.0" text="ProjectDest" />
+                                        <TableColumn fx:id="userPolicyNameCol" prefWidth="180.0" text="userName" />
+                                        <TableColumn fx:id="userPolicyDepCol" prefWidth="180.0" text="policyDepartment" />
+                                          <TableColumn fx:id="userPolicyProCol" prefWidth="180.0" text="policyProject" />
+                                          <TableColumn fx:id="userPolicyLevleCol" prefWidth="180.0" text="policyLevel" />
                                       </columns>
                                     </TableView>
                                  </children>
