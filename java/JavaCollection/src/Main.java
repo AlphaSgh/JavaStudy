@@ -11,6 +11,9 @@ public class Main {
 //        testMap.test02();
 //        testMap.testEnumMap();
 //        testTreeMap.test01();
-        testProperties.test01();
+//        testProperties.test01();
+//        testSet.test01();
+//        testSet.test02();
+        useQueue.test01();
     }
 }

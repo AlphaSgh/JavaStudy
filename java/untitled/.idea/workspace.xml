@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="96833eda-535f-442f-b400-f85c241a18b8" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../ZTLinuxGUI/.idea/artifacts/ZTLinuxGUI.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/untitled_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/AppTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaCollection/out/production/JavaCollection/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaCollection/out/production/JavaCollection/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaCollection/out/production/JavaCollection/setting.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaCollection/out/production/JavaCollection/setting.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaCollection/out/production/JavaCollection/testProperties.class" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaCollection/out/production/JavaCollection/testProperties.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaCollection/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaCollection/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ZTLinuxGUI/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ZTLinuxGUI/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ZTLinuxGUI/src/main/java/com/example/ztlinuxgui/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ZTLinuxGUI/src/main/java/com/example/ztlinuxgui/HelloController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ZTLinuxGUI/src/main/resources/com/example/ztlinuxgui/hello-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/../ZTLinuxGUI/src/main/resources/com/example/ztlinuxgui/hello-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fristJava/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fristJava/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fristJava/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fristJava/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fristJava/bin/com/itranswarp/sample/mmain.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fristJava/fristJava.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fristJava/out/production/fristJava/City.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fristJava/out/production/fristJava/ForTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fristJava/out/production/fristJava/Hello.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fristJava/out/production/fristJava/Hero.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fristJava/out/production/fristJava/Income.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fristJava/out/production/fristJava/Income1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fristJava/out/production/fristJava/IncomeInterface.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fristJava/out/production/fristJava/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fristJava/out/production/fristJava/Persion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fristJava/out/production/fristJava/Person.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fristJava/out/production/fristJava/PrimaryStudent.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fristJava/out/production/fristJava/Salary.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fristJava/out/production/fristJava/Salary1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fristJava/out/production/fristJava/StateCouncilSpecialAllowance.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fristJava/out/production/fristJava/StateSalary.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fristJava/out/production/fristJava/Stu.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fristJava/out/production/fristJava/Student.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fristJava/out/production/fristJava/Tea.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fristJava/out/production/fristJava/TestClassAndInstance.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fristJava/out/production/fristJava/noTax.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fristJava/out/production/fristJava/otherIncome.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fristJava/out/production/fristJava/otherIncomeInter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fristJava/out/production/fristJava/salaryInter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fristJava/src/ForTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fristJava/src/Hero.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fristJava/src/Income.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fristJava/src/Income1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fristJava/src/IncomeInterface.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fristJava/src/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fristJava/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fristJava/src/Person.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fristJava/src/TestClassAndInstance.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fristJava/src/com/itranswarp/sample/mmain.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fristJava/src/com/itranswarp/world/person.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="workspaceImportEnabled" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2IiUVSjWB4A6PBZeau4qOBMoAvO" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "E:/GITHUB/JavaStudy/java/ZTLinuxGUI",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Artifacts",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "reference.projectsettings.compiler.javacompiler",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.App" />
+      <module name="untitled" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.App" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="96833eda-535f-442f-b400-f85c241a18b8" name="Changes" comment="" />
+      <created>1670663921605</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1670663921605</updated>
+      <workItem from="1670663923624" duration="1291000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
