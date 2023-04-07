@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ssgh.dao.TeacherMapper">
+
+    <resultMap id="TeacherStudent" type="teacher">
+        <result property="id" column="tid"/>
+        <result property="name" column="tname"/>
+<!--        复杂属性 集合使用：collection，对象：association javaType="" 指定属性类型 集合中的泛型我们使用ofType-->
+        <!-- 这里的 property 指的是 teacher 类中的属性-->
+        <collection property="students" ofType="student">
+            <result property="id" column="sid"/>
+            <result property="name" column="sname"/>
+            <result property="tid" column="tid"/>
+        </collection>
+    </resultMap>
+    <select id="getTeacher" resultMap="TeacherStudent">
+        <!--        在sql中使用as给属性起别名-->
+        select s.name sname,s.id sid,t.name tname,t.id tid
+        from mybatis.student s,mybatis.teacher t
+        where s.tid=t.id
+    </select>
+
+</mapper>

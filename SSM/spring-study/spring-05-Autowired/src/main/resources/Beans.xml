@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/context
+      http://www.springframework.org/schema/context/spring-context.xsd">
+
+<!--    开启注解-->
+    <context:annotation-config/>
+    <bean id="cat" class="org.ssgh.pojo.Cat"/>
+    <bean id="cat111" class="org.ssgh.pojo.Cat"/>
+    <bean id="dog" class="org.ssgh.pojo.Dog"/>
+    <bean id="people" class="org.ssgh.pojo.People">
+        <property name="name" value="ssgh"/>
+    </bean>
+
+
+
+
+
+
+
+
+
+
+
+<!--xml中autowired自动装配-->
+<!--    <bean id="cat" class="org.ssgh.pojo.Cat" />-->
+<!--    <bean id="dog" class="org.ssgh.pojo.Dog" />-->
+<!--&lt;!&ndash;    <bean id="people" class="org.ssgh.pojo.People">&ndash;&gt;-->
+<!--&lt;!&ndash;        <property name="name" value="ssgh"/>&ndash;&gt;-->
+<!--&lt;!&ndash;        <property name="cat" ref="cat"/>&ndash;&gt;-->
+<!--&lt;!&ndash;        <property name="dog" ref="dog"/>&ndash;&gt;-->
+<!--&lt;!&ndash;    </bean>&ndash;&gt;-->
+<!--&lt;!&ndash;    byName自动装配：会自动在容器上下文中查找和自己对象set方法后面的值对应的bean id&ndash;&gt;-->
+<!--&lt;!&ndash;    <bean id="people" class="org.ssgh.pojo.People" autowire="byName" >&ndash;&gt;-->
+<!--&lt;!&ndash;    byType自动装配；会在容器上下文中查找和自己对象属性相同的bean&ndash;&gt;-->
+<!--    <bean id="people" class="org.ssgh.pojo.People" autowire="byType" >-->
+<!--        <property name="name" value="ssgh"/>-->
+<!--    </bean>-->
+</beans>

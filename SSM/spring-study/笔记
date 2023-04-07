@@ -1,0 +1,42 @@
+6.依赖注入
+6.1构造器注入
+6.2Set注入
+    依赖：bean对象的创建依赖于容器
+    注入：bean对象中的所有属性由容器赖注入
+6.3扩展方式注入
+6.4Bean的作用域
+    单例模式：创建的实例只有一个 默认
+    原型模式：每一个Bean创建的实例对象都是单独的一个,每次从容器中get的时候，都会产生一个独立的对象
+
+7.Bean的自动装配
+    自动装配是Spring满足bean依赖的一种方式
+    Spring会在上下文中自动寻找，并自动给bean装配属性
+
+    Spring中三种装配方式
+        1.xml中显示配置
+        2.在java中显示配置
+        3.隐式的自动装配
+    7.1 byName自动装配
+    需要保证bean的id唯一，并且这个bean需要满足和自动注入的属性的set方法的值保持一致
+    7.2 byType自动装配
+    需要保证bean的class唯一，并且这个bean需要和自动注入的属性的类型一致
+
+    7.3 使用注解实现自动装配
+        1.导入context约束
+        2.开启注解支持
+
+        @Autowired
+        直接在属性上使用，也可在set方法上使用
+        使用Autowired可以不写set方法
+        7.3.1
+        @Autowired
+        @Qualifier(value = "cat111")
+        7.3.2
+        @Resource(name = "cat111")
+
+        Resource 和 Autowired的区别
+        1.都是用来自动装配的都可以放在属性字段上
+        2.@Autowired通过byType的方式实现，而且必须要求对象存在
+        3.@Resource默认通过byName实现，如果找不到名字则通过byType实现
+
+

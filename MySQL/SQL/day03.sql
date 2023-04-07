@@ -1,0 +1,9 @@
+-- select prod_name from products;
+-- select prod_name from products order by prod_name;
+-- select prod_id, prod_price, prod_name from products order by prod_price, prod_name;
+-- select prod_id, prod_price, prod_name from products order by 1, 2, 3;
+-- select prod_id, prod_name, prod_price from products order by prod_price desc;
+-- select prod_id, prod_name, prod_price from products order by prod_price desc, prod_name desc;
+-- select cust_name from customers order by cust_name desc;
+-- select cust_id, order_num from orders order by cust_id, order_date desc;
+-- select item_price, quantity from orderitems order by quantity desc, item_price desc;

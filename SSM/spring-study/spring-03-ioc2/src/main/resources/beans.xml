@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean id="user" class="org.ssgh.pojo.User">
+<!--使用无参构造创建对象        <property name="name" value="ssgh"/>-->
+<!--使用下标有参构造-->        <constructor-arg index="0" value="ssgh"/>
+<!--使用类型创建，不建议使用        <constructor-arg type="java.lang.String" value="ssgh"/>-->
+<!--使用参数名创建，使用较多        <constructor-arg name="name" value="ssgh"/>-->
+    </bean>
+<!-- bean的配置
+    id : bean的唯一标识符，相当于我们学的对象名
+    class: bean对象对应的全限定名，包名+类名
+    name：也是别名，可以取多个别名
+-->
+<!--
+    import，一般用于团队开发，它可以将多个配置文件进行合并
+-->
+    <bean id="userT" class="org.ssgh.pojo.UserT" name="userT2, userT3, userT4">
+        <property name="name" value="UserT"/>
+    </bean>
+<!--user的别名    -->
+    <alias name="user" alias="userNew"/>
+</beans>

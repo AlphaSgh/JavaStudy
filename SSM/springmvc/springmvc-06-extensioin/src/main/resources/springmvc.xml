@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/mvc https://www.springframework.org/schema/mvc/spring-mvc.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd">
+    <context:component-scan base-package="com.ssgh"/>
+    <bean id="templateResolver" class="org.thymeleaf.spring5.templateresolver.SpringResourceTemplateResolver">
+        <!-- 你的html页面所在位置  -->
+        <property name="prefix" value="/WEB-INF/templates/"/>
+        <!-- html页面后缀  -->
+        <property name="suffix" value=".html"/>
+        <property name="templateMode" value="HTML"/>
+        <property name="cacheable" value="true"/>
+        <property name="characterEncoding" value="UTF-8"/>
+    </bean>
+
+    <bean id="templateEngine" class="org.thymeleaf.spring5.SpringTemplateEngine">
+        <property name="templateResolver" ref="templateResolver" />
+        <property name="enableSpringELCompiler" value="true" />
+    </bean>
+
+    <bean id="viewResolver" class="org.thymeleaf.spring5.view.ThymeleafViewResolver">
+        <property name="templateEngine" ref="templateEngine"/>
+        <property name="characterEncoding" value="UTF-8" />
+    </bean>
+    <mvc:default-servlet-handler/>
+    <!--    开启MVC的注解驱动-->
+    <mvc:annotation-driven/>
+    <!--    视图控制器：为当前请求直接设置视图名称实现页面跳转
+            若设置视图控制器，则只有试图控制器所设置的请求会被处理其他请求为404
+            此时必须设置一个标签 <mvc:annotation-driven/>
+    -->
+    <mvc:view-controller path="/" view-name="index"></mvc:view-controller>
+    <bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver"></bean>
+
+<!--    <bean id="firstInterceptor" class="com.ssgh.Interceptor.FirstInterceptor"></bean>-->
+<!--    <mvc:interceptors>-->
+<!--        <ref bean="firstInterceptor"/>-->
+<!--        <ref bean="secondInterceptor"/>-->
+<!--        <ref bean="threeInterceptor"/>-->
+<!--&lt;!&ndash;        1、通过类配置拦截器&ndash;&gt;-->
+<!--&lt;!&ndash;        <bean class="com.ssgh.Interceptor.FirstInterceptor"/> &ndash;&gt;-->
+
+<!--&lt;!&ndash;        2、通过bean配置拦截器&ndash;&gt;-->
+<!--&lt;!&ndash;        <ref bean="firstInterceptor"/>&ndash;&gt;-->
+
+<!--&lt;!&ndash;        3、更加细致的配置拦截器，拦截与排除拦截&ndash;&gt;-->
+<!--&lt;!&ndash;        <mvc:interceptor>&ndash;&gt;-->
+<!--&lt;!&ndash;            <mvc:mapping path="/**"/>&ndash;&gt;-->
+<!--&lt;!&ndash;            <mvc:exclude-mapping path="/teat/abc/def"/>&ndash;&gt;-->
+<!--&lt;!&ndash;            <ref bean="firstInterceptor"/>&ndash;&gt;-->
+<!--&lt;!&ndash;        </mvc:interceptor>&ndash;&gt;-->
+<!--    </mvc:interceptors>-->
+
+<!--&lt;!&ndash;    基于xml的异常处理&ndash;&gt;-->
+<!--    <bean class="org.springframework.web.servlet.handler.SimpleMappingExceptionResolver">-->
+<!--        <property name="exceptionMappings">-->
+<!--            <props>-->
+<!--                &lt;!&ndash;-->
+<!--       properties的键表示处理器方法执行过程中出现的异常-->
+<!--       properties的值表示若出现指定异常时，设置一个新的视图名称，跳转到指定页面-->
+<!--                 &ndash;&gt;-->
+<!--                <prop key="java.lang.ArithmeticException">error</prop>-->
+<!--            </props>-->
+<!--        </property>-->
+<!--        &lt;!&ndash;-->
+<!--            exceptionAttribute属性设置一个属性名，将出现的异常信息在请求域中进行共享-->
+<!--        &ndash;&gt;-->
+<!--        <property name="exceptionAttribute" value="ex"/>-->
+<!--    </bean>-->
+</beans>

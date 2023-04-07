@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<!--核心配置文件-->
+<configuration>
+<!--    优先级最高-->
+    <properties resource="db.properties">
+<!--        在里面的配置优先级低于外部-->
+        <property name="username" value="root"/>
+        <property name="password" value="password"/>
+    </properties>
+
+<!--    typeAliases给实体类起别名, 在不使用别名时，输入的类名不是完整路径将报错-->
+    <typeAliases>
+<!--        方法一：单体-->
+        <typeAlias type="com.ssgh.pojo.User" alias="user"/>
+<!--        方法二：批量, 默认别名为类名首字母小写，在扫描包的基础上还可以使用Alias注解-->
+        <package name="com.ssgh.pojo"/>
+<!--        保持包扫描的同时，再是实体类中增加 @Alias package + @Alias()-->
+    </typeAliases>
+
+    <environments default="development">
+        <environment id="development">
+            <transactionManager type="JDBC"/>
+            <dataSource type="POOLED">
+                <property name="driver" value="${driver}"/>
+                <property name="url" value="${url}"/>
+                <property name="username" value="${username}"/>
+                <property name="password" value="${password}"/>
+            </dataSource>
+        </environment>
+    </environments>
+    <mappers> <!--映射器（mappers）MapperRegistry：注册绑定我们的Mapper文件-->
+
+<!--      方式一：mapper 下 resource 绑定 ☆推荐使用  -->
+<!--        <mapper resource="com/ssgh/dao/UserMapper.xml"/>-->
+        <mapper class="com.ssgh.dao.StudentMapper"/>
+
+<!--        方式二：mapper 下 class 绑定 (同名同包）注意点：
+            接口和他的Mapper配置文件必须同名
+            接口和他的Mapper配置文件必须在同一个包下
+-->
+<!--        <mapper class="com.ssgh.dao.UserMapper"/>-->
+
+<!--        方式三：使用扫描包 package 注入绑定 (同名同包）注意点同方式二-->
+<!--        <package name="com.ssgh.dao"/>-->
+    </mappers>
+</configuration>

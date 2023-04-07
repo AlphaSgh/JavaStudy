@@ -1,0 +1,9 @@
+1:继承Thread类： ==》继承Thread类，重写run方法，调用start开启线程
+    子类继承Thread类具备多线程能力
+    启动线程：子类对象.start()
+    不建议使用，避免oop中的单继承局限性
+
+2:实现Runnable接口 ==》实现runnable接口，重写run方法，执行线程需要丢入runnable接口实现类，调用start方法
+    实现接口Runnable具备多线程能力
+    启动线程：传入对象+Thread对象.start()
+    推荐使用：避免单继承，灵活方便，方便同一个对象被多个线程使用
